@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 
-router.route('/:id?') // /user/   , /user/783287243784
+router.route('/:id?')
   .post(addUser)
-  .get(getUsers) // GET /user && /user/id
+  .get(getUsers)
   .put(updateUser)
   .delete(deleteUser);
 
