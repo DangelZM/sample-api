@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var app = require('../app');
+
+//Встановлення робочого порту
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log(`API is running on port ${port}`);
+});
